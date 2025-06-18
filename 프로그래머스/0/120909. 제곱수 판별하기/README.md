@@ -1,6 +1,6 @@
 # [level 0] 제곱수 판별하기 - 120909 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120909?language=csharp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120909) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 06월 18일 14:44:34
+2025년 06월 18일 14:47:07
 
 ### 문제 설명
 
