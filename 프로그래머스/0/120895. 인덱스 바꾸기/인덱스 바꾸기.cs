@@ -2,12 +2,10 @@ using System.Text;
 
 public class Solution {
     public string solution(string my_string, int num1, int num2) {
-        StringBuilder sb = new StringBuilder();
-sb.Append(my_string);
+        StringBuilder sb = new StringBuilder(my_string);
 
-char tem = sb[num2];
-sb[num2] = sb[num1];
-sb[num1] = tem;
+sb[num2] = my_string[num1];
+sb[num1] = my_string[num2];
 
 return sb.ToString();
     }
