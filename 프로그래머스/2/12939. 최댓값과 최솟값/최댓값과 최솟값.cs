@@ -1,28 +1,21 @@
-public class Solution {
-    public string solution(string s)
+public class Solution
 {
-    string[] str = s.Split(' ');
-
-    int[] num = new int[str.Length];
-
-    for(int i =0; i<str.Length; i++)
+    public string solution(string s)
     {
-        num[i] = int.Parse(str[i]);
-    }
+        string[] str = s.Split(' ');
 
-    int min = num[0];
-    int max = num[0];
-    for(int i =0; i<num.Length; i++)
-    {
-        for(int j = i+1; j<num.Length; j++)
+        int min = int.MaxValue;
+        int max = int.MinValue;
+
+        foreach(var a in str)
         {
-            if (num[j] > max)
-                max = num[j];
-            if (num[j] < min)
-                min = num[j];
+            int num = int.Parse(a);
+
+            if (num < min)
+                min = num;
+            if (num > max)
+                max = num;
         }
+        return $"{min} {max}";
     }
-    string answer = $"{min} {max}";
-    return answer;
-}
 }
